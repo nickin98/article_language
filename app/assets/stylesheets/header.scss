@@ -1,0 +1,47 @@
+$gray: #CCCCCC;
+$gray_light: #eff0ef;
+$black: #121215;
+$brick: #ac3501;
+$orange: #f89345;
+
+header {
+  // border-bottom: 1px solid $gray;
+  .header {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    .logo {
+      color: $black;
+      margin: 0 auto;
+      font-size: 22px;
+    }
+  }
+}
+
+nav {
+  height: 60px;
+  background-color: $brick;
+  .header_navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    li {
+      height: 100%;
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-family: tahoma;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $gray_light;
+        &:hover {
+          color: $black;
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}

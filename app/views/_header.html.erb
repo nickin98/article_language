@@ -1,5 +1,28 @@
+<%
+  menu = {
+           home: "Домашняя",
+           words: "Слова",
+           video: "Видео",
+           articles: "Статьи",
+           song_translation: "Перевод песен",
+           alphabet: "Алфавит"
+         }
+%>
 <header>
   <div class="container">
-    <div></div>
+    <div class="header">
+      <%= link_to "PopLangLetter", "/", class: "logo" %>
+    </div>
   </div>
 </header>
+<nav>
+  <div class="container">
+    <ul class="header_navigation">
+      <% menu.each do |key, value| %>
+        <li>
+          <%= link_to value, "/", class: key %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
