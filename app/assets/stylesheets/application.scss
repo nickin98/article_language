@@ -75,7 +75,6 @@ blockquote, q {
 html,
 body {
   height: 100%;
-  background-color: #eff0ef;
 }
 
 header, main, nav, footer {
@@ -84,4 +83,16 @@ header, main, nav, footer {
     height: 100%;
     margin: 0 auto;
   }
+}
+
+main {
+  .container {
+    padding: 20px 0;
+    background: #eff0ef;
+  }
+}
+
+.title_h2 {
+  font-family: tahoma;
+  font-size: 22px;
 }
