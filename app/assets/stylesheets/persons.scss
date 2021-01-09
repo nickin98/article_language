@@ -1,0 +1,28 @@
+.form_auth {
+  h2 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    .field {
+      &.email {
+        margin-top: 30px;
+      }
+      &.password {
+        margin-top: 15px;
+      }
+      &.remember_me {
+        margin: 10px 0;
+      }
+    }
+  }
+}

@@ -77,12 +77,10 @@ body {
   height: 100%;
 }
 
-header, main, nav, footer {
-  .container {
-    width: 1170px;
-    height: 100%;
-    margin: 0 auto;
-  }
+.container {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 main {
@@ -95,4 +93,14 @@ main {
 .title_h2 {
   font-family: tahoma;
   font-size: 22px;
+}
+
+h2, input {
+  font-family: tahoma;
+}
+
+input {
+  &:not([type="submit"]) {
+    padding: 7px 7px;
+  }
 }

@@ -1,0 +1,28 @@
+<div class="container form_auth">
+  <h2>Sign up</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field email">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placholder: :email %>
+    </div>
+
+    <div class="field password">
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", placholder: :password %>
+    </div>
+
+    <div class="field remember_me">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placholder: :password_confirmation %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div>
+  <% end %>
+</div>
+
+<%= render "devise/shared/links" %>

@@ -47,3 +47,25 @@ nav {
     }
   }
 }
+
+.header_bottom {
+  .auth {
+    border-top: 1px solid $gray;
+    .auth_block {
+      text-align: right;
+      padding: 0 10px;
+      background: $brick;
+      a {
+        display: inline-block;
+        font-family: tahoma;
+        font-weight: 600;
+        padding: 5px 20px;
+        color: $gray_light;
+        &:hover {
+          color: $black;
+          background-color: $orange;
+        }
+      }
+    }
+  }
+}
